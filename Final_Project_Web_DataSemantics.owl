@@ -1,0 +1,319 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#"
+     xml:base="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Contains"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Address -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Address"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Capacity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Capacity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#CodePostale -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#CodePostale"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Commune -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Commune"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Coordinates -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Coordinates"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Line -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Line"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Logitutde_Y -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Logitutde_Y"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Logitutde_x -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Logitutde_x"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Metro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Metro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Transports"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#PostOffice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#PostOffice">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Address"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#CodePostale"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Commune"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Logitutde_Y"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Logitutde_x"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Name"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#RER -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#RER">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Transports"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#School -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#School">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Address"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#CodePostale"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Commune"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Logitutde_Y"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Logitutde_x"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Name"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Train -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Train">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Transports"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#TrainStation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#TrainStation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Transports"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Line"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Coordinates"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Name"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Transports -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Transports"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Velib -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Velib">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Velo"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Name"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Capacity"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">100</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Velo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Velo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Transports"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Metro"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#RER"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Train"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Velo"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#PostOffice"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#School"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#TrainStation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Transports"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mhmd/ontologies/2022/2/untitled-ontology-10#Velib"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
