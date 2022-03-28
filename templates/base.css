@@ -1,0 +1,55 @@
+body {
+    color: #15172b;
+    font-family: "Roboto", sans-serif;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+
+  a {
+    color: #15172b;
+  }
+
+
+h1 {
+    padding: 60px;
+    text-align: center;
+    background:  #15172b;
+    color: white;
+    font-size: 30px;
+    font-family: "DM Serif Display", serif;
+    font-weight: normal;
+    line-height: 1;
+  }
+
+h2{
+    font-size: 1.875em;
+    line-height: 1;
+    margin: 1em 0;
+    font-family: "DM Serif Display", serif;
+    font-weight: normal;
+    color: #4b4b4b;
+    text-align: center;
+
+}
+
+input {
+  background-color: #15172b;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  cursor: pointer;
+  font-size: 18px;
+  height: 50px;
+  margin-top: 38px;
+  // outline: 0;
+  text-align: center;
+  width: 320px;
+}
+
+form{
+  text-align: center;
+}

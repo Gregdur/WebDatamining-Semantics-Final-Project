@@ -1,0 +1,67 @@
+<html>
+<head>
+    <title>Web Semantics Project</title>
+    <link rel="stylesheet" href="base.css" />
+</head>
+<body>
+<h1>Web Semantics Project</h1>
+
+<h2><p>DIA core 2 : Grégoire Caurier, Hamza Benyemna, Mohamad Hachem</p>
+<p>See here the universities of different french cities :</p></h2>
+
+<form action="http://127.0.0.1:5000/Paris">
+    <input type="submit" value="See Paris" />
+</form>
+<form action="http://127.0.0.1:5000/Lyon">
+    <input type="submit" value="See Lyon" />
+</form>
+<form action="http://127.0.0.1:5000/Lille">
+    <input type="submit" value="See Lille" />
+</form>
+<form action="http://127.0.0.1:5000/Bordeaux">
+    <input type="submit" value="See Bordeaux" />
+</form>
+
+<h2><p>See the velib around Paris :</p></h2>
+<form action="http://127.0.0.1:5000/Velib">
+    <input type="submit", value="See Velib" />
+</form>
+
+
+<h2><p>See here how you can go to a study place without using a car in Paris :</p></h2>
+
+
+<form action="http://127.0.0.1:5000/Paris/University/Mobility">
+    <input type="submit" value="See Paris Mobility&Study" />
+</form>
+<h2><p>See All the Train and metro stations of IDF :</p></h2>
+<form action="http://127.0.0.1:5000/Gares">
+    <input type="submit" value="See Gares" />
+</form>
+
+<hr>
+
+<h2><p>BONUS</p></h2>
+
+</hr>
+
+<h2><p>Search for a transport line using the name :</p></h2>
+<form method="POST", action="http://127.0.0.1:5000/Gares/ligne">
+<b>
+    Nom de ligne :  <input type="text", name='x2', placeholder="enter "> <br><br>
+</b>
+     <input type="submit" , value='See ligne' >
+</form>
+
+
+<h2><p>Search of postal offices of a city using the zipcode :</p></h2>
+<form method="POST", action="http://127.0.0.1:5000/Postes">
+<b>
+    Zip Code :  <input type="text", name='x1', placeholder="enter "> <br><br>
+</b>
+     <input type="submit" , value='See Postes' >
+</form>
+
+
+</body>
+</html>  
